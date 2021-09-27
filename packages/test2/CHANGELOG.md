@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/phetw/github-action-lerna/compare/@phetw/test-github-action-lerna-release2@1.1.0...@phetw/test-github-action-lerna-release2@1.1.1) (2021-09-27)
+
+
+### Bug Fixes
+
+* bug ([6470314](https://github.com/phetw/github-action-lerna/commit/6470314bdfc23a2808dc5c38e78b7df355025f2a))
+
+
+
+
+
 # [1.1.0](https://github.com/phetw/github-action-lerna/compare/@phetw/test-github-action-lerna-release2@1.0.1...@phetw/test-github-action-lerna-release2@1.1.0) (2021-09-27)
 
 
