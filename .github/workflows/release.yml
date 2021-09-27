@@ -20,7 +20,6 @@ jobs:
 
       - name: Configure Git User
         run: |
-          git config --global user.email "wasuwat.se@gmail.com"
           git config --global user.name "phetw"
 
       - run: lerna changed
