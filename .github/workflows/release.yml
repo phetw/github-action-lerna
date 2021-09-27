@@ -1,0 +1,30 @@
+name: Release
+on:
+  push:
+    branches: [master]
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 15.x
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'npm'
+
+      # Detecting changed packages...
+      - run: lerna changed
+
+      - run: npm ci --ignore-scripts --audit=false --fund=false
+
+      - run: lerna run build --include-dependencies --since origin/master...HEAD
+
+      - run: lerna version --conventional-commits --yes
+
+      - run: lerna publish from-package --yes
