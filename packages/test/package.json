@@ -1,5 +1,5 @@
 {
-  "name": "test-github-action-lerna-release",
+  "name": "@phetw/test-github-action-lerna-release",
   "version": "1.0.3",
   "description": "",
   "main": "index.js",

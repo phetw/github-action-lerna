@@ -30,3 +30,5 @@ jobs:
       - run: lerna version --conventional-commits --yes
 
       - run: lerna publish from-package --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
