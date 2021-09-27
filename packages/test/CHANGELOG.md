@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.3 (2021-09-27)
+
+**Note:** Version bump only for package test-github-action-lerna-release
+
+
+
+
+
 ## [1.0.2](https://github.com/phetw/github-action-lerna/compare/@phetw/test-github-action-lerna-release@1.0.1...@phetw/test-github-action-lerna-release@1.0.2) (2021-09-27)
 
 **Note:** Version bump only for package @phetw/test-github-action-lerna-release
