@@ -1,6 +1,6 @@
 {
   "name": "@phetw/test-github-action-lerna-release",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "license": "MIT",
