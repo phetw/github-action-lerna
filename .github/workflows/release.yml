@@ -23,6 +23,8 @@ jobs:
           git config --global user.email "wasuwat.se@gmail.com"
           git config --global user.name "phetw"
 
+      - run: lerna changed
+
       - run: npm ci --ignore-scripts --audit=false --fund=false
 
       - run: lerna run build --include-dependencies --since origin/master...HEAD
