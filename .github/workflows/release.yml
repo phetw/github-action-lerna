@@ -22,14 +22,12 @@ jobs:
         run: |
           git config --global user.name "hellotest"
 
-      - run: lerna changed
-
       - run: npm ci --ignore-scripts --audit=false --fund=false
 
       - run: lerna run build --include-dependencies --since origin/master...HEAD
 
       - run: lerna version --conventional-commits --yes
 
-      - run: lerna publish --force-publish @phetw/test-github-action-lerna-release patch
+      - run: lerna publish --force-publish @phetw/test-github-action-lerna-release,@phetw/test-github-action-lerna-release2 patch
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
